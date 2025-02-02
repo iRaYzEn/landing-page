@@ -7,10 +7,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100dvh;
+    font-family: "Be Vietnam Pro", serif;
 }
 
 .wrapper {
-    width: 90%;
+    width: 88%;
     margin-inline: auto;
 }
 
@@ -22,12 +23,19 @@ body {
     background-color: #F3603C;
     color: white;
     padding: 1em;
-    padding-inline: 2.5em;
+    padding-inline: 2em;
     border-radius: 3em;
+    font-weight: 700;
+}
+
+.get-started:hover {
+    opacity: 0.8;
 }
 
 .section-header {
     font-size: 2rem;
+    font-weight: 700;
+    color: #242D52;
 }
 
 .text-different {
@@ -35,23 +43,41 @@ body {
     opacity: .5;
     font-size: .9rem;
     margin-bottom: 3em;
+    font-weight: 400;
 }
 
 .num {
     color: white;
     background-color: #F3603C;
-    padding: .8em;
+    padding: .5em;
+    padding-inline: 1.5em;
     font-weight: 700;
-    padding-inline: 2em;
     border-radius: 2em;
     margin-left: -5px;
 }
 
 .list-header {
-    background-color: #FFF0EC;
+    color: #242D52;
+    font-weight: 700;
     padding: .5em;
     font-size: .9rem;
     font-weight: 500;
     border-radius: 3em;
     margin-bottom: 1em;
+}
+
+.list-item {
+    display: flex;
+    align-items: start;
+    gap: .75em;
+}
+
+.btn-white {
+    background-color: white;
+    color: #F3603C;
+    padding: 1em;
+    padding-inline: 3em;
+    border-radius: 3em;
+    font-weight: 700;
+
 }
