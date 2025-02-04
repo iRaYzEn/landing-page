@@ -110,3 +110,11 @@ body {
 .section-gap:has(.cursel) .get-started {
     display: block;
 }
+
+.list-wrapper {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 15px;
+}

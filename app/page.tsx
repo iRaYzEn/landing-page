@@ -110,10 +110,13 @@ export default function Home() {
                 </div>
             </section>
             <footer className="bg-[#1D1E25] text-white py-16">
-                <div className="wrapper flex justify-between items-center">
-                    <div className="flex flex-wrap gap-20">
-                        <Image src={logo} alt="logo" />
-                        <div className="flex gap-4">
+                <div className="wrapper flex justify-center sm:justify-between 
+                    items-center gap-[54px] sm:flex-nowrap flex-wrap-reverse">
+                    <div className="flex flex-wrap-reverse  
+                        gap-[50px]  flex-col">
+                        <p className="opacity-50 block sm:hidden">Copyright 2020. All Rights Reserved</p>
+                        <Image className="mx-auto" src={logo} alt="logo" />
+                        <div className="flex gap-4 mx-auto">
                             <Link href="#" >
                                 <Image src={facebook} alt="logo" />
                             </Link>
@@ -132,37 +135,42 @@ export default function Home() {
                         </div>
                     </div>
                     <div>
-                        <ul className="flex gap-12 flex-wrap">
-                            <li>
-                                <Link href="#">Community</Link>
-                            </li>
-                            <li>
-                                <Link href="#">Pricing</Link>
-                            </li>
+                        <ul className="flex gap-24 flex-wrap  flex-row justify-between sm:flex-nowrap ">
+                            <div className="list-wrapper">
+                                <li>
+                                    <Link href="#">Home</Link>
+                                </li>
+                                <li>
+                                    <Link href="#">Pricing</Link>
+                                </li>
+                                <li>
+                                    <Link href="#">Product</Link>
+                                </li>
+                                <li>
+                                    <Link href="#">About Us</Link>
+                                </li>
+                            </div>
+                            <div className="list-wrapper">
+                                <li>
+                                    <Link href="#">Careers</Link>
+                                </li>
+                                <li>
+                                    <Link href="#">Community</Link>
+                                </li>
 
-                            <li>
-                                <Link href="#">Product</Link>
-                            </li>
-                            <li>
-                                <Link href="#">About Us</Link>
-                            </li>
-                            <li>
-                                <Link href="#">Careers</Link>
-                            </li>
-                            <li>
-                                <Link href="#">Community</Link>
-                            </li>
-
-                            <li>
-                                <Link href="#">Privacy Policy</Link>
-                            </li>
+                                <li>
+                                    <Link href="#">Privacy Policy</Link>
+                                </li>
+                            </div>
                         </ul>
 
                     </div>
-                    <div className="flex flex-wrap gap-4 justify-center">
-                        <input type="email" placeholder="updates in your inbox" className="rounded-full px-[1em] py-[.5em]" />
-                        <button className="py-[0.5em] px-[1em] rounded-full font-bold text-[1rem] bg-[#F3603C]">Go</button>
-                        <p className="hidden lg:block">Copyright 2020. All Rights Reserved</p>
+                    <div className="flex flex-col gap-16">
+                        <div className="flex gap-2">
+                            <input type="email" placeholder="updates in your inbox..." className="rounded-full px-[1em] py-[.5em]" />
+                            <button className="py-[0.5em] px-[1em] rounded-full font-bold text-[1rem] bg-[#F3603C]">Go</button>
+                        </div>
+                        <p className="opacity-50 hidden sm:block text-[13px] self-end">Copyright 2020. All Rights Reserved</p>
                     </div>
 
                 </div>
