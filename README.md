@@ -39,5 +39,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 6th 40 min:
 - trying to make the footer more responsive 70% better i think
 
+7th 60 min: 
+- making the cursel responsive for mobile users
+- implementing the buttons for the cursel again for mobile users
+- moving the footer and the cursel to there own components
 
-## total 240min
+### end of day 4, 140min
+
+## total 300min = 5 hours of work

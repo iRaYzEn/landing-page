@@ -84,13 +84,30 @@ body {
 
 .cursel {
     background-color: #FAFAFA;
-    min-width: 640px;
+    max-width: 640px;
     text-align: center;
     line-height: 1.6em;
 }
+
 .cursel:first-child {
     margin-left: -60px;
 }
+
+@media (max-width: 1024px) {
+    .cursel {
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    .cursel:first-child {
+        margin: auto;
+    }
+
+    .section-gap:has(.cursel) {
+        padding: 18px;
+    }
+}
+
 
 .cursel-image {
     width: 72px;
@@ -98,15 +115,19 @@ body {
     margin-top: -36px;
     margin-inline: auto;
 }
+
 .cursel-header {
     padding-bottom: 20px;
 }
+
 .cursel-text {
     padding: 24px 40px;
 }
+
 .cursel .text-different {
     font-size: 1rem;
 }
+
 .section-gap:has(.cursel) .get-started {
     display: block;
 }
@@ -117,4 +138,26 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     font-size: 15px;
+}
+
+.list-wrapper li:hover {
+    color: #F3603C;
+}
+
+.wrapper img:hover {
+    fill: #F3603C;
+}
+
+.cursel-btns {
+    margin-top: 26px;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.cursel-btn {
+    border: 1px solid red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }

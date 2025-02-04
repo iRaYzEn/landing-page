@@ -1,18 +1,7 @@
+import Footer from "./Footer";
 import Image from "next/image";
-import logo from "@/public/images/logo.svg"
-import facebook from "@/public/images/icon-facebook.svg"
-import instagram from "@/public/images/icon-instagram.svg"
-import twitter from "@/public/images/icon-twitter.svg"
-import pinterest from "@/public/images/icon-pinterest.svg"
-import youtube from "@/public/images/icon-youtube.svg"
 import heroImage from "@/public/images/illustration-intro.svg"
-
-import anishaLi from "@/public/images/avatar-anisha.png"
-import ali from "@/public/images/avatar-ali.png"
-import shanai from "@/public/images/avatar-shanai.png"
-import richard from "@/public/images/avatar-richard.png"
-
-import Link from "next/link";
+import Cursel from "./cursel";
 
 export default function Home() {
     return (
@@ -71,36 +60,7 @@ export default function Home() {
             </section>
             <section className="section-gap overflow-hidden">
                 <h2 className="section-header text-center mb-[100px]">What they’ve said</h2>
-                <div className="flex gap-[30px]">
-                    <div className="cursel">
-                        <Image className="cursel-image" src={anishaLi} alt="" />
-                        <div className="cursel-text">
-                            <h4 className="cursel-header">Anisha Li</h4>
-                            <p className="text-different">  “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
-                        </div>
-                    </div>
-                    <div className="cursel">
-                        <Image className="cursel-image" src={ali} alt="" />
-                        <div className="cursel-text">
-                            <h4 className="cursel-header">Ali Bravo</h4>
-                            <p className="text-different">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
-                        </div>
-                    </div>
-                    <div className="cursel">
-                        <Image className="cursel-image" src={richard} alt="" />
-                        <div className="cursel-text">
-                            <h4 className="cursel-header">Richard Watts</h4>
-                            <p className="text-different">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
-                        </div>
-                    </div>
-                    <div className="cursel">
-                        <Image className="cursel-image" src={shanai} alt="" />
-                        <div className="cursel-text">
-                            <h4 className="cursel-header">Shanai Gough</h4>
-                            <p className="text-different">“Their software allows us to track@@@@, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
-                        </div>
-                    </div>
-                </div>
+                <Cursel />
                 <button className="get-started mx-auto mt-12">Get Started</button>
             </section>
             <section className="section-gap bg-[#F3603C] py-[5em]">
@@ -109,72 +69,7 @@ export default function Home() {
                     <button className="btn-white mt-8 lg:mt-0 lg:mx-0 mx-auto hover:opacity-95">Get Started</button>
                 </div>
             </section>
-            <footer className="bg-[#1D1E25] text-white py-16">
-                <div className="wrapper flex justify-center sm:justify-between 
-                    items-center gap-[54px] sm:flex-nowrap flex-wrap-reverse">
-                    <div className="flex flex-wrap-reverse  
-                        gap-[50px]  flex-col">
-                        <p className="opacity-50 block sm:hidden">Copyright 2020. All Rights Reserved</p>
-                        <Image className="mx-auto" src={logo} alt="logo" />
-                        <div className="flex gap-4 mx-auto">
-                            <Link href="#" >
-                                <Image src={facebook} alt="logo" />
-                            </Link>
-                            <Link href="#" >
-                                <Image src={youtube} alt="logo" />
-                            </Link>
-                            <Link href="#" >
-                                <Image src={twitter} alt="logo" />
-                            </Link>
-                            <Link href="#" >
-                                <Image src={pinterest} alt="logo" />
-                            </Link>
-                            <Link href="#" >
-                                <Image src={instagram} alt="logo" />
-                            </Link>
-                        </div>
-                    </div>
-                    <div>
-                        <ul className="flex gap-24 flex-wrap  flex-row justify-between sm:flex-nowrap ">
-                            <div className="list-wrapper">
-                                <li>
-                                    <Link href="#">Home</Link>
-                                </li>
-                                <li>
-                                    <Link href="#">Pricing</Link>
-                                </li>
-                                <li>
-                                    <Link href="#">Product</Link>
-                                </li>
-                                <li>
-                                    <Link href="#">About Us</Link>
-                                </li>
-                            </div>
-                            <div className="list-wrapper">
-                                <li>
-                                    <Link href="#">Careers</Link>
-                                </li>
-                                <li>
-                                    <Link href="#">Community</Link>
-                                </li>
-
-                                <li>
-                                    <Link href="#">Privacy Policy</Link>
-                                </li>
-                            </div>
-                        </ul>
-
-                    </div>
-                    <div className="flex flex-col gap-16">
-                        <div className="flex gap-2">
-                            <input type="email" placeholder="updates in your inbox..." className="rounded-full px-[1em] py-[.5em]" />
-                            <button className="py-[0.5em] px-[1em] rounded-full font-bold text-[1rem] bg-[#F3603C]">Go</button>
-                        </div>
-                        <p className="opacity-50 hidden sm:block text-[13px] self-end">Copyright 2020. All Rights Reserved</p>
-                    </div>
-
-                </div>
-            </footer >
+            <Footer />
         </>
     );
 }
