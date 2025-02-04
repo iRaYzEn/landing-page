@@ -29,4 +29,11 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ### end of the day 2, 80min of work
 
+### day three no work
+
+### day four
+
+5th 40 min:
+- implementing the cursel
+
 ## total 120min

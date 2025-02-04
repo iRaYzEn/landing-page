@@ -7,6 +7,11 @@ import pinterest from "@/public/images/icon-pinterest.svg"
 import youtube from "@/public/images/icon-youtube.svg"
 import heroImage from "@/public/images/illustration-intro.svg"
 
+import anishaLi from "@/public/images/avatar-anisha.png"
+import ali from "@/public/images/avatar-ali.png"
+import shanai from "@/public/images/avatar-shanai.png"
+import richard from "@/public/images/avatar-richard.png"
+
 import Link from "next/link";
 
 export default function Home() {
@@ -20,11 +25,11 @@ export default function Home() {
                             together to build
                             better products.
                         </h1>
-                        <p className="my-4 text-different ">
+                        <p className="my-4 text-different">
                             Manage makes it simple for software teams to plan
                             day-to-day tasks while keeping the larger team goals in view.
                         </p>
-                        <button className="get-started mt-2">Get Started</button>
+                        <button className="get-started mt-2 mx-auto">Get Started</button>
                     </div>
                     <Image className="mx-auto lg:mx-0" src={heroImage} alt="hero image" />
                 </div>
@@ -64,10 +69,39 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="section-gap">
-                <h2>What they’ve said</h2>
-                <h1>cursel</h1>
-                <button className="get-started">Get Started</button>
+            <section className="section-gap overflow-hidden">
+                <h2 className="section-header text-center mb-[100px]">What they’ve said</h2>
+                <div className="flex gap-[30px]">
+                    <div className="cursel">
+                        <Image className="cursel-image" src={anishaLi} alt="" />
+                        <div className="cursel-text">
+                            <h4 className="cursel-header">Anisha Li</h4>
+                            <p className="text-different">  “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+                        </div>
+                    </div>
+                    <div className="cursel">
+                        <Image className="cursel-image" src={ali} alt="" />
+                        <div className="cursel-text">
+                            <h4 className="cursel-header">Ali Bravo</h4>
+                            <p className="text-different">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+                        </div>
+                    </div>
+                    <div className="cursel">
+                        <Image className="cursel-image" src={richard} alt="" />
+                        <div className="cursel-text">
+                            <h4 className="cursel-header">Richard Watts</h4>
+                            <p className="text-different">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+                        </div>
+                    </div>
+                    <div className="cursel">
+                        <Image className="cursel-image" src={shanai} alt="" />
+                        <div className="cursel-text">
+                            <h4 className="cursel-header">Shanai Gough</h4>
+                            <p className="text-different">“Their software allows us to track@@@@, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+                        </div>
+                    </div>
+                </div>
+                <button className="get-started mx-auto mt-12">Get Started</button>
             </section>
             <section className="section-gap bg-[#F3603C] py-[5em]">
                 <div className="wrapper flex flex-wrap  lg:text-left text-center justify-between">
@@ -80,11 +114,21 @@ export default function Home() {
                     <div className="flex flex-wrap gap-20">
                         <Image src={logo} alt="logo" />
                         <div className="flex gap-4">
-                            <Image src={facebook} alt="logo" />
-                            <Image src={youtube} alt="logo" />
-                            <Image src={twitter} alt="logo" />
-                            <Image src={pinterest} alt="logo" />
-                            <Image src={instagram} alt="logo" />
+                            <Link href="#" >
+                                <Image src={facebook} alt="logo" />
+                            </Link>
+                            <Link href="#" >
+                                <Image src={youtube} alt="logo" />
+                            </Link>
+                            <Link href="#" >
+                                <Image src={twitter} alt="logo" />
+                            </Link>
+                            <Link href="#" >
+                                <Image src={pinterest} alt="logo" />
+                            </Link>
+                            <Link href="#" >
+                                <Image src={instagram} alt="logo" />
+                            </Link>
                         </div>
                     </div>
                     <div>
@@ -112,18 +156,17 @@ export default function Home() {
                             <li>
                                 <Link href="#">Privacy Policy</Link>
                             </li>
-
                         </ul>
 
                     </div>
-                    <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-wrap gap-4 justify-center">
                         <input type="email" placeholder="updates in your inbox" className="rounded-full px-[1em] py-[.5em]" />
                         <button className="py-[0.5em] px-[1em] rounded-full font-bold text-[1rem] bg-[#F3603C]">Go</button>
                         <p className="hidden lg:block">Copyright 2020. All Rights Reserved</p>
                     </div>
 
                 </div>
-            </footer>
+            </footer >
         </>
     );
 }

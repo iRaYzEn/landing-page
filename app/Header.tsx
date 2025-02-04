@@ -36,7 +36,7 @@ export default function Header() {
                         </li>
                     </ul>
                 </nav>
-                <button className="get-started lg:block hidden">Get Started</button>
+                <button className="get-started hidden lg:block">Get Started</button>
                 <button className="lg:hidden block" onClick={handleClick}>
                     {
                         isClicked ? <Image src={iconClose} alt="close icon" />

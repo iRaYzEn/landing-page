@@ -81,3 +81,32 @@ body {
     font-weight: 700;
 
 }
+
+.cursel {
+    background-color: #FAFAFA;
+    min-width: 640px;
+    text-align: center;
+    line-height: 1.6em;
+}
+.cursel:first-child {
+    margin-left: -60px;
+}
+
+.cursel-image {
+    width: 72px;
+    height: 72px;
+    margin-top: -36px;
+    margin-inline: auto;
+}
+.cursel-header {
+    padding-bottom: 20px;
+}
+.cursel-text {
+    padding: 24px 40px;
+}
+.cursel .text-different {
+    font-size: 1rem;
+}
+.section-gap:has(.cursel) .get-started {
+    display: block;
+}
