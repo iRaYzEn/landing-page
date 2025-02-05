@@ -84,7 +84,7 @@ body {
 
 .cursel {
     background-color: #FAFAFA;
-    max-width: 640px;
+    min-width: 640px;
     text-align: center;
     line-height: 1.6em;
 }
@@ -95,7 +95,7 @@ body {
 
 @media (max-width: 1024px) {
     .cursel {
-        width: fit-content;
+        min-width: fit-content;
         margin-inline: auto;
     }
 
