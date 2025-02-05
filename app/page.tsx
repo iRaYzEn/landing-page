@@ -9,7 +9,7 @@ export default function Home() {
             <section className="section-gap">
                 <div className="wrapper flex items-center justify-between flex-wrap-reverse lg:flex-nowrap">
                     <div className="text-center lg:text-left lg:w-[430px] mx-auto lg:mx-0">
-                        <h1 className="text-dark-blue text-[2.5rem]  font-bold ">
+                        <h1 className="text-dark-blue text-[2rem] lg:text-[2.5rem] font-bold ">
                             Bring everyone
                             together to build
                             better products.
@@ -20,18 +20,18 @@ export default function Home() {
                         </p>
                         <button className="get-started mt-2 mx-auto">Get Started</button>
                     </div>
-                    <Image className="mx-auto lg:mx-0" src={heroImage} alt="hero image" />
+                    <Image className="mx-auto lg:mx-0 w-fit h-fit h-96" src={heroImage} alt="hero image" />
                 </div>
             </section>
             <section className="section-gap">
-                <div className="wrapper flex items-start flex-wrap lg:flex-nowrap">
-                    <div className="text-center md:text-left">
-                        <h2 className="section-header">What’s different about Manage?</h2>
+                <div className="wrapper flex items-start flex-wrap lg:flex-nowrap justify-between">
+                    <div className="text-center md:text-left sm:w-full lg:w-[30%]">
+                        <h2 className="section-header text-[40px] pt-[40px]">What’s different about Manage?</h2>
                         <p className="text-different my-4">Manage provides all the functionality your team needs,
                             without the complexity. Our software is tailor-made
                             for modern digital product teams. </p>
                     </div>
-                    <div>
+                    <div className="lg:w-[50%]">
                         <ul className="mt-12">
                             <li className="list-item">
                                 <span className="num">01</span>
