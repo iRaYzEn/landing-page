@@ -6,7 +6,7 @@ export default function Hero() {
         <section className="section-gap">
             <div className="wrapper flex items-center justify-between flex-wrap-reverse lg:flex-nowrap">
                 <div className="text-center lg:text-left lg:w-[430px] mx-auto lg:mx-0">
-                    <h1 className="text-dark-blue text-[2rem] lg:text-[2.5rem] font-bold ">
+                    <h1 className="text-dark-blue font-bold text-[2.5rem]">
                         Bring everyone
                         together to build
                         better products.
@@ -17,7 +17,7 @@ export default function Hero() {
                     </p>
                     <button className="get-started mt-2 mx-auto">Get Started</button>
                 </div>
-                <Image className="mx-auto lg:mx-0 w-fit h-fit h-96" src={heroImage} alt="hero image" />
+                <Image className="mx-auto lg:mx-0 w-[30rem] z-0" src={heroImage} alt="hero image" />
             </div>
         </section>
     )

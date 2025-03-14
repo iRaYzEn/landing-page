@@ -1,7 +1,6 @@
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Footer from "./components/Footer";
-import Cursel from "./components/cursel";
 import Reviews from "./components/Reviews";
 import Start from "./components/Start"
 
