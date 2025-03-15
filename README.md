@@ -55,5 +55,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 i just made the mobile heade
 
+### end of day 5 
+
+### day 6:
+
+10 min:
+- use the next/font/google module instead of the old way for better fonts optimization
+
 
 ## total 300min = 5 hours of work

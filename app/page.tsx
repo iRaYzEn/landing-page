@@ -6,12 +6,12 @@ import Start from "./components/Start"
 
 export default function Home() {
     return (
-        <main>
-            <Hero />
-            <About />
-            <Reviews />
-            <Start />
-            <Footer />
-        </main>
+            <main>
+                <Hero />
+                <About />
+                <Reviews />
+                <Start />
+                <Footer />
+            </main>
     );
 }

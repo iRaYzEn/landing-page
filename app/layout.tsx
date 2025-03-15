@@ -1,5 +1,12 @@
+import { Be_Vietnam_Pro } from 'next/font/google'
+
+const vietnam = Be_Vietnam_Pro({
+    weight: ['400', '500', '700'],
+    subsets: ['latin'],
+})
+
 import "./globals.css"
-import Header from "./components/Header";
+import Header from './components/Header';
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -7,14 +14,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <head>
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet" />
-            </head>
-            <body
+            <body 
+            className={vietnam.className}
             >
-                <Header />
+            <Header />
                 {children}
             </body>
         </html>
