@@ -67,7 +67,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-16">
                     <div className="flex gap-2">
-                        <input type="email" placeholder="updates in your inbox..." className="rounded-full px-[1em] py-[.5em]" />
+                        <input type="email" placeholder="updates in your inbox..." className="rounded-full px-[1em] py-[.5em] text-black" />
                         <button className="py-[0.5em] px-[1em] rounded-full font-bold text-[1rem] bg-[#F3603C]">Go</button>
                     </div>
                     <p className="opacity-50 hidden lg:block text-[13px] self-end">Copyright 2020. All Rights Reserved</p>

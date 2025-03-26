@@ -7,6 +7,26 @@ body {
     position: relative;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgba(0, 0, 0, 0.80));
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.5s;
+    pointer-events: none; /* This makes clicks go through */
+    z-index: -1;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .wrapper {
     width: 88%;
     margin-inline: auto;
@@ -82,9 +102,12 @@ body {
 
 .cursel {
     background-color: #FAFAFA;
-    min-width: 640px;
+    max-width: 640px;
+    /*one cursel is unbalnced compared to the other 3*/
+    max-height: 275px;
     text-align: center;
     line-height: 1.6em;
+    margin-bottom: 2rem;
 }
 
 .cursel:first-child {
@@ -107,14 +130,46 @@ body {
 }
 
 
+.swiper {
+     overflow: visible !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: transparent !important; /* Force background color */
+    transition: all 0.3s ease;
+    border: 1px solid #F3603C;
+    padding: .25rem;
+    opacity: 1.0 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #F3603C !important; /* Force active bullet color */
+}
+
+.swiper-pagination {
+    bottom: -40px !important;
+}
+
+@media (min-width: 1256px) {
+    .swiper-pagination-bullet {
+        display: none !important;
+    }
+}
+
 .cursel-image {
+    height: auto;
+    object-fit: cover;
+    /*i don't know how moving from block to inline-block solved this but it worked*/
+    /*display: block;*/
+    display: inline-block;
     width: 72px;
     height: 72px;
-    margin-top: -36px;
     margin-inline: auto;
+    margin-top: -36px;
 }
 
 .cursel-header {
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 

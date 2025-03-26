@@ -73,6 +73,8 @@ export default function Header() {
                             </li>
                         </ul>
                     </nav>
+                    <div className={clsx("overlay", isClicked ? "active" : ""  )}></div>
+
                 </div>
             </div>
         </header>

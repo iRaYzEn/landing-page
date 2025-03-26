@@ -19,7 +19,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - making couple of classes to use them across the project
 - improving the intro section
 
-### end of the day 1, 80min of work
 
 3rd 40 min:
 - importing the font 
@@ -29,12 +28,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 4th 40 min:
 - implementing the footer of the page without Responsibility
 - styling the footer
-
-### end of the day 2, 80min of work
-
-### day three no work
-
-### day four
 
 5th 40 min:
 - implementing the cursel
@@ -47,20 +40,16 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 - implementing the buttons for the cursel again for mobile users
 - moving the footer and the cursel to their own components
 
-### end of day 4, 140min
-
-### day 5 optimizing:
-
-60-120 (i fogot to count) min:
-
-i just made the mobile heade
-
-### end of day 5 
-
-### day 6:
-
-10 min:
-- use the next/font/google module instead of the old way for better fonts optimization
-
-
 ## total 300min = 5 hours of work
+
+### optimization:
+
+60-120 min (i forgot to count): i made the mobile nav
+
+10 min: using the next/font/google module instead of the old way for better fonts optimization
+
+40 min: learning how to use swiper.js and make it work in the project
+
+30 min: making the overlay works when clicking on the navbar icon (mobile)
+
+## total 160min  = 2 hours and 20 min (give or take)
