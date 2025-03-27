@@ -5,7 +5,7 @@ import ali from "@/public/images/avatar-ali.png"
 import shanai from "@/public/images/avatar-shanai.png"
 import richard from "@/public/images/avatar-richard.png"
 import { Swiper, SwiperSlide } from "swiper/react"
-import {  Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import "swiper/css"
 import 'swiper/css/pagination';
 
@@ -18,9 +18,10 @@ export default function Cursel() {
             spaceBetween={100}
             slidesPerView={1}
             breakpoints={{
-                0: { slidesPerView: 1, pagination: true },  // 1 slide on very small screens (mobile)
-                850: { slidesPerView: 2, pagination: false },
-                1256: { slidesPerView: 3 } // 3 slides on larger screens
+                0: { slidesPerView: 1, },
+                850: { slidesPerView: 2, spaceBetween: 20 }, // reduce the spacing 
+                //1024: {slidesPerView: 2, spaceBetween: 80 }, // from 1024 to 1256 no spacing at all this is going to fix it
+                1256: { slidesPerView: 3, spaceBetween: 100 }
             }}
             pagination={{ clickable: true }}
             onSlideChange={() => console.log('slide change')}
