@@ -150,7 +150,7 @@ body {
     bottom: -40px !important;
 }
 
-@media (min-width: 1256px) {
+@media (min-width: 1024px) {
     .swiper-pagination-bullet {
         display: none !important;
     }

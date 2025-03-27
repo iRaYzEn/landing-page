@@ -20,7 +20,7 @@ export default function Cursel() {
             breakpoints={{
                 0: { slidesPerView: 1, },
                 850: { slidesPerView: 2, spaceBetween: 20 }, // reduce the spacing 
-                //1024: {slidesPerView: 2, spaceBetween: 80 }, // from 1024 to 1256 no spacing at all this is going to fix it
+                1024: {slidesPerView: 2, spaceBetween: 80 }, // from 1024 to 1256 no spacing at all this is going to fix it
                 1256: { slidesPerView: 3, spaceBetween: 100 }
             }}
             pagination={{ clickable: true }}
