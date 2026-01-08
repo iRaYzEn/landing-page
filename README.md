@@ -1,10 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-#### link for the project
-- https://landing-page-frontend-mentor-irayzen.netlify.app/
 
 ## front-end mentor project
 - https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5
+
+### timeline for programming/codding the project including thinking + implementing 
 
 1st 40 min:
 - thinking of how to aproach desgin 
